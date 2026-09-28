@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Fantasy Game - FPS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    #app {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 100;
+      font-family: monospace;
+      max-width: 300px;
+    }
+
+    #info h1 {
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #4ecdc4;
+    }
+
+    #info p {
+      font-size: 12px;
+      margin: 2px 0;
+      color: #aaa;
+    }
+
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.9);
+      padding: 30px;
+      border-radius: 5px;
+      text-align: center;
+      z-index: 50;
+      font-family: monospace;
+    }
+
+    #loading.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="loading">
+    <p>Initializing Dark Fantasy Game...</p>
+  </div>
+
+  <div id="info">
+    <h1>🎮 FPS Controls</h1>
+    <p>W/A/S/D - Move</p>
+    <p>Mouse - Look</p>
+    <p id="chunks">Chunks: 0</p>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

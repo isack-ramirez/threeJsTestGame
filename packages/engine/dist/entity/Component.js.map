@@ -1,0 +1,1 @@
+{"version":3,"file":"Component.js","sourceRoot":"","sources":["../../src/entity/Component.ts"],"names":[],"mappings":"AAGA;;GAEG;AACH,MAAM,OAAgB,SAAS;IAG7B,YAAY,MAAc;QAFhB;;;;;WAAc;QAGtB,IAAI,CAAC,MAAM,GAAG,MAAM,CAAA;IACtB,CAAC;IAED,SAAS;QACP,OAAO,IAAI,CAAC,MAAM,CAAA;IACpB,CAAC;IAED,QAAQ,KAAU,CAAC;IACnB,SAAS,KAAU,CAAC;IAIpB,OAAO,KAAU,CAAC;CACnB"}
